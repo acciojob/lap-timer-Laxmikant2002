@@ -1,1 +1,55 @@
+.app {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
 
+.timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: 4px;
+    transition: background-color 0.2s;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.lap-list {
+    margin-top: 20px;
+}
+
+.lap-list ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.lap-list li {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+}
